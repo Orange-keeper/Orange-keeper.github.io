@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="个人学习用网站">
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <meta name="describe" content="用于记录学习HTML CSS JS过程中遇见的技术">
+    <title>学习记录</title>
+    <style>
+        h1{
+            border:solid 0px #ddd;
+            width: 1000px;
+        }
+        h1>div{
+            border:solid 0px red;
+            width:230px;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <div>
+            个人学习用网站 
+        </div>
+    </h1>
+
+    <fieldset>
+        <header>
+            <nav>
+                <a href="2.html">2.html</a>
+                <a href="3.html">3.html</a>
+                <a href="4.html">4.html</a>
+            </nav>
+        </header>
+    </fieldset>
+
+    <br/>
+    <form>
+            <table border="1">
+                <caption>表格标题</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">第一列</th>
+                        <th colspan="2">第二列</th>
+                    </tr>
+                    <tr>
+                        <th>第二列</th>
+                        <th>第三列</th>
+                    </tr>
+                </thead>
+            </table>
+            <fieldset>
+                <legend>信息填写</legend>
+                <input type="name" name="name" placeholder="填写姓名"><br/>
+                <label>生日</label>
+                <input type="date" name="birthday"><br/>
+                <input type="radio" name="sex" id="man" value="man"/>
+                <label for="man">男</label>
+                <input type="radio" name="sex" id="woman" value="woman"/>
+                <label for="woman">女</label>
+                <br/>
+                <input type="checkbox" name="phone" id="phone" value="phone"/>
+                <label for="phone">手机</label>
+                <input type="checkbox" name="mail" id="mail" value="mail"/>
+                <label for="mail">邮箱</label><br/>
+                <input id="inputnum" name="num" type="text" list="num">
+                <datalist id="num">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </datalist>
+                <br/>
+                <button>提交</button>
+            </fieldset>
+            <fieldset><!--video.js-->
+                <legend>视频</legend>
+                <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="metadata"
+                width="640"
+                height="264"
+                poster="MY_VIDEO_POSTER.jpg"
+                data-setup="{}"
+              >
+                <source src="龙珠超黑悟空.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a
+                  web browser that
+                  <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+              </video>
+            </fieldset>
+
+    </form>
+    
+    <br/>
+
+    <fieldset>
+        <footer>
+            <small>个人学习用网站，此处为页面底部</small>
+        </footer>
+    </fieldset>
+</body>
+</html>
